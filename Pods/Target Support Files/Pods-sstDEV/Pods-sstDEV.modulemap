@@ -1,0 +1,6 @@
+framework module Pods_sstDEV {
+  umbrella header "Pods-sstDEV-umbrella.h"
+
+  export *
+  module * { export * }
+}

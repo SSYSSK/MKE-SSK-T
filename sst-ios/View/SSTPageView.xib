@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Ja4-Go-y5e" customClass="SSTPageView" customModule="sst_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="178"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RVx-hT-ELL">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="178"/>
+                    <connections>
+                        <outlet property="delegate" destination="Ja4-Go-y5e" id="EnB-u0-vir"/>
+                    </connections>
+                </scrollView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" numberOfPages="6" translatesAutoresizingMaskIntoConstraints="NO" id="xxg-QO-hro">
+                    <rect key="frame" x="256" y="133" width="87" height="37"/>
+                    <color key="tintColor" red="0.36078431370000003" green="0.32549019610000002" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="currentPageIndicatorTintColor" red="0.36078431370000003" green="0.32549019610000002" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="RVx-hT-ELL" firstAttribute="top" secondItem="Ja4-Go-y5e" secondAttribute="top" id="22j-1g-YAo"/>
+                <constraint firstItem="xxg-QO-hro" firstAttribute="centerY" secondItem="Ja4-Go-y5e" secondAttribute="bottom" multiplier="0.85" id="7t5-wr-RC2"/>
+                <constraint firstAttribute="trailing" secondItem="RVx-hT-ELL" secondAttribute="trailing" id="BTb-FY-jbp"/>
+                <constraint firstItem="RVx-hT-ELL" firstAttribute="leading" secondItem="Ja4-Go-y5e" secondAttribute="leading" id="Oku-ZQ-I9J"/>
+                <constraint firstAttribute="bottom" secondItem="RVx-hT-ELL" secondAttribute="bottom" id="X61-Sa-9KG"/>
+                <constraint firstItem="xxg-QO-hro" firstAttribute="centerX" secondItem="Ja4-Go-y5e" secondAttribute="centerX" id="xz9-wh-mj2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="pageControl" destination="xxg-QO-hro" id="EO1-OW-Z7W"/>
+                <outlet property="scrollView" destination="RVx-hT-ELL" id="vH7-zW-RGs"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="-209"/>
+        </view>
+    </objects>
+</document>

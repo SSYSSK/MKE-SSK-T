@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SSTProductDiscountCell" customModule="sst_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="28"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="27"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_discount" translatesAutoresizingMaskIntoConstraints="NO" id="oj2-Tm-lJd">
+                        <rect key="frame" x="23" y="6.5" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="8b8-xn-IZD"/>
+                            <constraint firstAttribute="width" constant="15" id="rdy-lP-Xuf"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$14.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMg-wx-9wi">
+                        <rect key="frame" x="42" y="8" width="42" height="11.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.33681691753926701" green="0.33681691753926701" blue="0.33681691753926701" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mc8-6p-7xT">
+                        <rect key="frame" x="88" y="8" width="14.5" height="11.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.36078431372549019" green="0.32549019607843138" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=$74.95" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKq-wx-vFq">
+                        <rect key="frame" x="108.5" y="8" width="51" height="11.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.33681691749999998" green="0.33681691749999998" blue="0.33681691749999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save $0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7M-KT-sZh">
+                        <rect key="frame" x="253.5" y="8" width="49.5" height="11.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.36078431372549019" green="0.32549019607843138" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="XKq-wx-vFq" firstAttribute="leading" secondItem="Mc8-6p-7xT" secondAttribute="trailing" constant="6" id="0Gj-cp-TQ2"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="XKq-wx-vFq" secondAttribute="bottom" id="5HY-bz-Bp8"/>
+                    <constraint firstItem="Mc8-6p-7xT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="HxZ-kb-OPH"/>
+                    <constraint firstItem="Mc8-6p-7xT" firstAttribute="leading" secondItem="KMg-wx-9wi" secondAttribute="trailing" constant="4" id="Ihr-sX-6qP"/>
+                    <constraint firstItem="t7M-KT-sZh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="KuF-0i-VvJ"/>
+                    <constraint firstItem="KMg-wx-9wi" firstAttribute="leading" secondItem="oj2-Tm-lJd" secondAttribute="trailing" constant="4" id="LGY-BO-9OE"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="KMg-wx-9wi" secondAttribute="bottom" id="PFa-v5-CdP"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="t7M-KT-sZh" secondAttribute="bottom" id="Qur-JB-04Y"/>
+                    <constraint firstItem="oj2-Tm-lJd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="ea2-DB-rYJ"/>
+                    <constraint firstItem="oj2-Tm-lJd" firstAttribute="centerY" secondItem="KMg-wx-9wi" secondAttribute="centerY" id="fYS-Jt-ddM"/>
+                    <constraint firstItem="XKq-wx-vFq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="gsQ-4v-zLX"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="t7M-KT-sZh" secondAttribute="trailing" constant="9" id="kTp-vG-JLX"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Mc8-6p-7xT" secondAttribute="bottom" id="p7M-92-jvQ"/>
+                    <constraint firstItem="KMg-wx-9wi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="rQO-rl-ncN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="allPriceLabel" destination="XKq-wx-vFq" id="Kzo-Kt-LPI"/>
+                <outlet property="countLabel" destination="Mc8-6p-7xT" id="BVQ-ej-1Q9"/>
+                <outlet property="priceLabel" destination="KMg-wx-9wi" id="IZo-YL-J8Q"/>
+                <outlet property="yourSavePriceLabel" destination="t7M-KT-sZh" id="9A1-el-S4X"/>
+            </connections>
+            <point key="canvasLocation" x="-99" y="-16"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_discount" width="13" height="13"/>
+    </resources>
+</document>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view alpha="0.80000000000000004" contentMode="scaleToFill" id="No7-Gg-met" customClass="SSTPromoMsgView" customModule="sst_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXY-AI-BvO">
+                    <rect key="frame" x="0.0" y="0.0" width="365" height="35"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="0.12549019610000001" green="0.14901960780000001" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="VXY-AI-BvO" firstAttribute="leading" secondItem="No7-Gg-met" secondAttribute="leading" id="XSq-n5-EvB"/>
+                <constraint firstAttribute="trailing" secondItem="VXY-AI-BvO" secondAttribute="trailing" constant="10" id="tVd-U5-IiP"/>
+                <constraint firstAttribute="bottom" secondItem="VXY-AI-BvO" secondAttribute="bottom" id="u7R-nF-g9u"/>
+                <constraint firstItem="VXY-AI-BvO" firstAttribute="top" secondItem="No7-Gg-met" secondAttribute="top" id="zfU-wX-kVJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="scrollView" destination="VXY-AI-BvO" id="rUM-Jm-r88"/>
+            </connections>
+            <point key="canvasLocation" x="-38.5" y="-212.5"/>
+        </view>
+    </objects>
+</document>

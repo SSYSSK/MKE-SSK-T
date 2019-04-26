@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="IyY-lk-ua3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SearchVC-->
+        <scene sceneID="0jQ-xQ-BNz">
+            <objects>
+                <viewController storyboardIdentifier="SSTSearchVC" id="IyY-lk-ua3" customClass="SSTSearchVC" customModule="sst" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="10l-ZL-d3Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="0qt-Nj-1xY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZM9-Lo-bHg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_navigationBarBg" translatesAutoresizingMaskIntoConstraints="NO" id="HP3-t4-7oZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Hat-Pt-OzI"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YLH-4l-CSs">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X9V-gG-dpb" customClass="SSTSearchTextField" customModule="sst" customModuleProvider="target">
+                                        <rect key="frame" x="6" y="7" width="306" height="30"/>
+                                        <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eka-gT-cV0">
+                                        <rect key="frame" x="321" y="8" width="45" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clickedCancelButton:" destination="IyY-lk-ua3" eventType="touchUpInside" id="kTK-PK-cxo"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_search" translatesAutoresizingMaskIntoConstraints="NO" id="y6P-mt-eah">
+                                        <rect key="frame" x="15" y="14" width="16" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="16" id="E0O-O3-NTx"/>
+                                            <constraint firstAttribute="height" constant="16" id="fZH-3l-rGb"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button hidden="YES" opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ulW-bu-8dU">
+                                        <rect key="frame" x="288" y="14" width="16" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="16" id="feJ-kX-4fG"/>
+                                            <constraint firstAttribute="width" constant="16" id="qw8-dy-TcN"/>
+                                        </constraints>
+                                        <state key="normal" image="icon_delete"/>
+                                        <connections>
+                                            <action selector="clickedDeleteTextButton:" destination="IyY-lk-ua3" eventType="touchUpInside" id="uqS-7h-yTj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Eka-gT-cV0" firstAttribute="leading" secondItem="ulW-bu-8dU" secondAttribute="trailing" constant="17" id="5ep-GQ-GKC"/>
+                                    <constraint firstItem="X9V-gG-dpb" firstAttribute="top" secondItem="YLH-4l-CSs" secondAttribute="top" constant="7" id="8dy-UM-jCp"/>
+                                    <constraint firstItem="X9V-gG-dpb" firstAttribute="leading" secondItem="YLH-4l-CSs" secondAttribute="leading" constant="6" id="J1P-ZA-kYg"/>
+                                    <constraint firstAttribute="trailing" secondItem="X9V-gG-dpb" secondAttribute="trailing" constant="63" id="MCi-kK-df5"/>
+                                    <constraint firstAttribute="trailing" secondItem="X9V-gG-dpb" secondAttribute="trailing" priority="250" constant="83" id="Pim-1Z-Yil"/>
+                                    <constraint firstItem="y6P-mt-eah" firstAttribute="centerY" secondItem="X9V-gG-dpb" secondAttribute="centerY" id="Qas-rz-II3"/>
+                                    <constraint firstItem="y6P-mt-eah" firstAttribute="leading" secondItem="X9V-gG-dpb" secondAttribute="leading" constant="9" id="TNw-ag-tZ5"/>
+                                    <constraint firstAttribute="height" constant="44" id="aOS-Ha-ZMf"/>
+                                    <constraint firstItem="X9V-gG-dpb" firstAttribute="leading" secondItem="YLH-4l-CSs" secondAttribute="leading" priority="250" constant="23" id="cMD-03-k6E"/>
+                                    <constraint firstItem="ulW-bu-8dU" firstAttribute="top" secondItem="YLH-4l-CSs" secondAttribute="top" constant="14" id="e8X-lR-1J1"/>
+                                    <constraint firstItem="Eka-gT-cV0" firstAttribute="top" secondItem="YLH-4l-CSs" secondAttribute="top" constant="8" id="iUg-fV-XEj"/>
+                                    <constraint firstAttribute="trailing" secondItem="Eka-gT-cV0" secondAttribute="trailing" constant="9" id="lfV-No-4oC"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Pim-1Z-Yil"/>
+                                        <exclude reference="cMD-03-k6E"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="zsl-z5-w0G">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="IyY-lk-ua3" id="nus-Kq-OR8"/>
+                                    <outlet property="delegate" destination="IyY-lk-ua3" id="TkS-ZW-hhb"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="YLH-4l-CSs" secondAttribute="trailing" id="F0g-qJ-hod"/>
+                            <constraint firstAttribute="trailing" secondItem="zsl-z5-w0G" secondAttribute="trailing" id="Hpe-4C-hHE"/>
+                            <constraint firstItem="YLH-4l-CSs" firstAttribute="bottom" secondItem="HP3-t4-7oZ" secondAttribute="bottom" id="RN0-o7-1t2"/>
+                            <constraint firstItem="zsl-z5-w0G" firstAttribute="top" secondItem="HP3-t4-7oZ" secondAttribute="bottom" id="RXF-kl-Lob"/>
+                            <constraint firstAttribute="trailing" secondItem="HP3-t4-7oZ" secondAttribute="trailing" id="bn0-bY-cVc"/>
+                            <constraint firstAttribute="bottom" secondItem="zsl-z5-w0G" secondAttribute="bottom" id="brM-ax-I9z"/>
+                            <constraint firstItem="zsl-z5-w0G" firstAttribute="leading" secondItem="ZM9-Lo-bHg" secondAttribute="leading" id="kts-ET-xTv"/>
+                            <constraint firstItem="HP3-t4-7oZ" firstAttribute="leading" secondItem="ZM9-Lo-bHg" secondAttribute="leading" id="maF-XY-Hev"/>
+                            <constraint firstItem="HP3-t4-7oZ" firstAttribute="top" secondItem="ZM9-Lo-bHg" secondAttribute="top" id="oar-0u-TUB"/>
+                            <constraint firstItem="YLH-4l-CSs" firstAttribute="leading" secondItem="ZM9-Lo-bHg" secondAttribute="leading" id="ynI-oj-lvr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="deleteTextButton" destination="ulW-bu-8dU" id="nlG-WA-CCP"/>
+                        <outlet property="searchBarBgView" destination="HP3-t4-7oZ" id="27v-GD-D6x"/>
+                        <outlet property="searchBarBgViewHeightContraint" destination="Hat-Pt-OzI" id="EQ8-6h-AAW"/>
+                        <outlet property="searchTextField" destination="X9V-gG-dpb" id="AEE-jx-cOB"/>
+                        <outlet property="tableView" destination="zsl-z5-w0G" id="sbf-1g-c4w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cFl-Nl-G42" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1490.4000000000001" y="-482.60869565217394"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_delete" width="20" height="20"/>
+        <image name="icon_navigationBarBg" width="375" height="66"/>
+        <image name="icon_search" width="22" height="22"/>
+    </resources>
+</document>

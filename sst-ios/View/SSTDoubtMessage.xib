@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="86f-oY-B9B" customClass="SSTDoubtMessage" customModule="sst" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view alpha="0.44999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VqX-bt-TA7">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.58785994760000004" green="0.58785994760000004" blue="0.58785994760000004" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_doubt_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="2Kn-eN-zBj">
+                    <rect key="frame" x="67" y="303" width="15" height="12"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ugJ-pi-YFP">
+                    <rect key="frame" x="47" y="315" width="281" height="139"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPt-Zg-pRw">
+                            <rect key="frame" x="10" y="5" width="261" height="139"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <string key="text">Your total amount due exceeded the maximum ship first pay later allowed open balance.You may swifth to PayPal as payment option without limit,or pay your ship first pay later due amount in full or partially first in order to select ship first pay later payment option.</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.1960784314" green="0.23137254900000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="VqX-bt-TA7" firstAttribute="leading" secondItem="86f-oY-B9B" secondAttribute="leading" id="END-hY-p87"/>
+                <constraint firstAttribute="trailing" secondItem="VqX-bt-TA7" secondAttribute="trailing" id="c4h-c6-K9A"/>
+                <constraint firstAttribute="bottom" secondItem="VqX-bt-TA7" secondAttribute="bottom" id="mn5-rF-drJ"/>
+                <constraint firstItem="VqX-bt-TA7" firstAttribute="top" secondItem="86f-oY-B9B" secondAttribute="top" id="xAf-mg-Odh"/>
+            </constraints>
+            <connections>
+                <outlet property="arror" destination="2Kn-eN-zBj" id="JJC-bj-UlQ"/>
+                <outlet property="message" destination="NPt-Zg-pRw" id="ytD-vF-dFO"/>
+                <outlet property="messageView" destination="ugJ-pi-YFP" id="SY3-1M-Aa0"/>
+            </connections>
+            <point key="canvasLocation" x="26.5" y="254.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_doubt_arrow" width="8" height="7"/>
+    </resources>
+</document>

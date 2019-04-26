@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="81" id="XN9-pW-jSz" customClass="SSTTalkImageForOthersCell" customModule="sst" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="412" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XN9-pW-jSz" id="ifH-4L-lag">
+                <rect key="frame" x="0.0" y="0.0" width="412" height="93.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contact_sst" translatesAutoresizingMaskIntoConstraints="NO" id="xgo-l6-eHs">
+                        <rect key="frame" x="9" y="9" width="39" height="39"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="39" id="1YA-cz-hRw"/>
+                            <constraint firstAttribute="width" secondItem="xgo-l6-eHs" secondAttribute="height" multiplier="1:1" id="sBb-A9-vKu"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contact_right_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="6uk-R6-zOe">
+                        <rect key="frame" x="53" y="24" width="8" height="9"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bYs-7D-9GC">
+                        <rect key="frame" x="61" y="13" width="133" height="66"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6hs-O1-RVX">
+                        <rect key="frame" x="69" y="21" width="117" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="117" id="JiA-JR-H63"/>
+                            <constraint firstAttribute="height" constant="50" id="gcC-Rh-iQ3"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xgo-l6-eHs" firstAttribute="top" secondItem="ifH-4L-lag" secondAttribute="top" constant="9" id="3Sw-Cs-1bd"/>
+                    <constraint firstItem="6hs-O1-RVX" firstAttribute="leading" secondItem="6uk-R6-zOe" secondAttribute="trailing" constant="8" id="6Hz-VC-mlN"/>
+                    <constraint firstItem="bYs-7D-9GC" firstAttribute="leading" secondItem="6uk-R6-zOe" secondAttribute="trailing" id="BkS-Xc-RcA"/>
+                    <constraint firstItem="bYs-7D-9GC" firstAttribute="width" secondItem="6hs-O1-RVX" secondAttribute="width" constant="16" id="IBJ-Zf-PGp"/>
+                    <constraint firstItem="6uk-R6-zOe" firstAttribute="centerY" secondItem="xgo-l6-eHs" secondAttribute="centerY" id="Led-Dv-xuo"/>
+                    <constraint firstItem="6hs-O1-RVX" firstAttribute="top" secondItem="xgo-l6-eHs" secondAttribute="top" constant="12" id="MYW-0J-dM6"/>
+                    <constraint firstItem="xgo-l6-eHs" firstAttribute="leading" secondItem="ifH-4L-lag" secondAttribute="leading" constant="9" id="Sa9-Qg-fbx"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="6hs-O1-RVX" secondAttribute="bottom" constant="22" id="bYC-oa-9nE"/>
+                    <constraint firstItem="6uk-R6-zOe" firstAttribute="leading" secondItem="xgo-l6-eHs" secondAttribute="trailing" constant="5" id="brw-Qu-oxh"/>
+                    <constraint firstItem="bYs-7D-9GC" firstAttribute="top" secondItem="6hs-O1-RVX" secondAttribute="top" constant="-8" id="h0w-de-rJC"/>
+                    <constraint firstItem="bYs-7D-9GC" firstAttribute="height" secondItem="6hs-O1-RVX" secondAttribute="height" constant="16" id="oF6-2P-zBm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="imageViewHeightContant" destination="gcC-Rh-iQ3" id="62b-WD-DUh"/>
+                <outlet property="imageViewWidthContant" destination="JiA-JR-H63" id="6NS-NW-bk3"/>
+                <outlet property="imgView" destination="6hs-O1-RVX" id="nVL-k7-8An"/>
+            </connections>
+            <point key="canvasLocation" x="-53" y="65"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="contact_right_arrow" width="8" height="9"/>
+        <image name="contact_sst" width="39" height="39"/>
+    </resources>
+</document>

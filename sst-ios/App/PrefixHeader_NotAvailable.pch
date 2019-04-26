@@ -1,0 +1,26 @@
+//
+//  PrefixHeader.pch
+//  sst-ios
+//
+//  Created by Liang Zhang on 16/4/12.
+//  Copyright © 2016年 lzhang. All rights reserved.
+//
+
+//#import <Availability.h>
+//#import <UIKit/UIKit.h>
+#import "PayPalPayment.h"
+#import "PayPalMobile.h"
+//#import <zlib.h>
+#import "CardIO.h"
+#import <CommonCrypto/CommonHMAC.h>
+//#import "SVProgressHUD.h"
+
+//#import "UIImageView+WebCache.h"
+
+#if __IPHONE_OS_VERSION_MIN_REQUIRED
+
+#ifndef __IPHONE_9_0
+    #warning "This project uses features only available in iPhone SDK 9.0 and later."
+#endif
+
+#endif

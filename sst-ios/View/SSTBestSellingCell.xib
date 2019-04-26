@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SSTBestSellingCell" id="yin-IO-ANK" customClass="SSTBestSellingCell" customModule="sst" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="270"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="270"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RAj-Y5-Wdx">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="270"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="RAj-Y5-Wdx" secondAttribute="bottom" id="AoF-SI-tXS"/>
+                <constraint firstItem="RAj-Y5-Wdx" firstAttribute="leading" secondItem="yin-IO-ANK" secondAttribute="leading" id="aVX-pD-4ni"/>
+                <constraint firstAttribute="trailing" secondItem="RAj-Y5-Wdx" secondAttribute="trailing" id="rea-cQ-wDf"/>
+                <constraint firstItem="RAj-Y5-Wdx" firstAttribute="top" secondItem="yin-IO-ANK" secondAttribute="top" id="wKZ-Tz-jq3"/>
+            </constraints>
+            <size key="customSize" width="300" height="238"/>
+            <point key="canvasLocation" x="619" y="432"/>
+        </collectionViewCell>
+    </objects>
+</document>

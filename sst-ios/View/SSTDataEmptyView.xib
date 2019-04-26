@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="GLj-nH-7bA" customClass="SSTDataEmptyView" customModule="sst" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_history_empty" translatesAutoresizingMaskIntoConstraints="NO" id="Jqc-On-aJh">
+                    <rect key="frame" x="160" y="123" width="56" height="54"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Empty" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mai-LN-l5R">
+                    <rect key="frame" x="20" y="197" width="335" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C20-PA-7bj">
+                    <rect key="frame" x="121.5" y="244" width="131" height="36.5"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.32549019610000002" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="C20-PA-7bj" secondAttribute="height" multiplier="9:2.5" id="z44-1Y-QGR"/>
+                    </constraints>
+                    <state key="normal" title="Try Again">
+                        <color key="titleColor" red="0.95294117649999999" green="0.96470588239999999" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="clickedButton:" destination="GLj-nH-7bA" eventType="touchUpInside" id="ELg-wd-20S"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Mai-LN-l5R" firstAttribute="leading" secondItem="GLj-nH-7bA" secondAttribute="leading" constant="20" id="0vT-8L-1Qp"/>
+                <constraint firstItem="C20-PA-7bj" firstAttribute="top" secondItem="Mai-LN-l5R" secondAttribute="bottom" constant="30" id="2V0-iD-bYC"/>
+                <constraint firstItem="Jqc-On-aJh" firstAttribute="centerX" secondItem="GLj-nH-7bA" secondAttribute="centerX" id="Z8j-g2-OII"/>
+                <constraint firstItem="Mai-LN-l5R" firstAttribute="top" secondItem="Jqc-On-aJh" secondAttribute="bottom" constant="20" id="afr-gn-iip"/>
+                <constraint firstAttribute="trailing" secondItem="Mai-LN-l5R" secondAttribute="trailing" constant="20" id="feq-AN-GEn"/>
+                <constraint firstItem="Jqc-On-aJh" firstAttribute="centerY" secondItem="GLj-nH-7bA" secondAttribute="centerY" multiplier="0.45" id="hr7-bq-qLF"/>
+                <constraint firstItem="C20-PA-7bj" firstAttribute="centerX" secondItem="GLj-nH-7bA" secondAttribute="centerX" id="mQM-06-EhU"/>
+                <constraint firstItem="C20-PA-7bj" firstAttribute="width" secondItem="GLj-nH-7bA" secondAttribute="width" multiplier="0.35" id="x2z-ME-mBh"/>
+            </constraints>
+            <connections>
+                <outlet property="imgV" destination="Jqc-On-aJh" id="6j0-4k-c1w"/>
+                <outlet property="msgLabel" destination="Mai-LN-l5R" id="cQl-C9-WyD"/>
+                <outlet property="tryAgainButton" destination="C20-PA-7bj" id="2QK-23-vBZ"/>
+            </connections>
+            <point key="canvasLocation" x="-57" y="-17"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_history_empty" width="56" height="54"/>
+    </resources>
+</document>

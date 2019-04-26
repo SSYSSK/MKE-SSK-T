@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="vlu-b2-aHI" customClass="SSTCategoryDetailView" customModule="sst_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="loU-Zq-jje">
+                    <rect key="frame" x="0.0" y="72" width="600" height="528"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="vlu-b2-aHI" id="lAu-oJ-vf7"/>
+                        <outlet property="delegate" destination="vlu-b2-aHI" id="Rjv-Jj-hRm"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="loU-Zq-jje" firstAttribute="top" secondItem="vlu-b2-aHI" secondAttribute="top" constant="72" id="FpZ-H4-qM0"/>
+                <constraint firstAttribute="bottom" secondItem="loU-Zq-jje" secondAttribute="bottom" id="Inb-uL-rFn"/>
+                <constraint firstAttribute="trailing" secondItem="loU-Zq-jje" secondAttribute="trailing" id="WMe-5c-qGQ"/>
+                <constraint firstItem="loU-Zq-jje" firstAttribute="leading" secondItem="vlu-b2-aHI" secondAttribute="leading" id="v5k-vZ-nuv"/>
+            </constraints>
+            <connections>
+                <outlet property="tableView" destination="loU-Zq-jje" id="CTe-sf-eWo"/>
+            </connections>
+            <point key="canvasLocation" x="307" y="420"/>
+        </view>
+        <tapGestureRecognizer id="6fY-bv-g3a">
+            <connections>
+                <action selector="didClickedLeftMaskView:" destination="vlu-b2-aHI" id="2Tx-OD-cSF"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

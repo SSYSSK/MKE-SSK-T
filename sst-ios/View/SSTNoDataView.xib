@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SSTNoDataView" customModule="sst_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_badConnected" translatesAutoresizingMaskIntoConstraints="NO" id="exl-b6-mp5">
+                    <rect key="frame" x="250" y="164" width="100" height="83.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="exl-b6-mp5" secondAttribute="height" multiplier="12:10" id="KEo-wh-p1h"/>
+                        <constraint firstAttribute="width" constant="100" id="VOX-Uj-5Rv"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No more data" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PL0-90-nSc">
+                    <rect key="frame" x="30" y="272.5" width="540" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="5gR-rI-ilL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <color key="textColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ea5-H3-dFR">
+                    <rect key="frame" x="210" y="352.5" width="180" height="40"/>
+                    <color key="backgroundColor" red="0.36078431372549019" green="0.32549019607843138" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="OG6-Om-Jlt"/>
+                        <constraint firstAttribute="width" constant="180" id="eLh-aF-6d8"/>
+                    </constraints>
+                    <state key="normal" title="Try again">
+                        <color key="titleColor" red="0.95294117649999999" green="0.96470588239999999" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="reloadEvent:" destination="iN0-l3-epB" eventType="touchUpInside" id="wlS-PS-8Bd"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PL0-90-nSc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="2GP-ba-dWT"/>
+                <constraint firstItem="PL0-90-nSc" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="hOI-V7-tRd"/>
+                <constraint firstItem="exl-b6-mp5" firstAttribute="centerX" secondItem="PL0-90-nSc" secondAttribute="centerX" id="k98-3U-6hA"/>
+                <constraint firstItem="PL0-90-nSc" firstAttribute="top" secondItem="exl-b6-mp5" secondAttribute="bottom" constant="25" id="m7P-XI-l07"/>
+                <constraint firstItem="Ea5-H3-dFR" firstAttribute="centerX" secondItem="PL0-90-nSc" secondAttribute="centerX" id="ran-SR-wqx"/>
+                <constraint firstAttribute="trailing" secondItem="PL0-90-nSc" secondAttribute="trailing" constant="30" id="wFc-hR-daY"/>
+                <constraint firstItem="Ea5-H3-dFR" firstAttribute="top" secondItem="PL0-90-nSc" secondAttribute="bottom" constant="25" id="x5l-ey-otE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="iconImage" destination="exl-b6-mp5" id="4P8-nM-QE6"/>
+                <outlet property="infoLabel" destination="PL0-90-nSc" id="qIw-XD-Lag"/>
+            </connections>
+            <point key="canvasLocation" x="18.5" y="27.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_badConnected" width="79" height="54"/>
+    </resources>
+</document>

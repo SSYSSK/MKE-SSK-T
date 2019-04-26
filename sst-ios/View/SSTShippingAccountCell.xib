@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="67" id="bXD-CI-k65" customClass="SSTShippingAccountCell" customModule="sst_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="67"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bXD-CI-k65" id="AjQ-xo-F7H">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="66"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" tag="1001" contentMode="scaleToFill" verticalCompressionResistancePriority="748" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNS-OD-Ynw">
+                        <rect key="frame" x="23" y="21" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="Xix-Pi-0Un"/>
+                            <constraint firstAttribute="height" constant="25" id="zSV-z3-l4a"/>
+                        </constraints>
+                        <state key="normal" image="icon_checkbox_normal"/>
+                        <state key="selected" image="icon_checkbox_sel"/>
+                        <connections>
+                            <action selector="clickedSelectButton:" destination="bXD-CI-k65" eventType="touchUpInside" id="02d-66-xfm"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ship Via My FedEx Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CD2-gl-ZHe">
+                        <rect key="frame" x="51" y="13" width="166" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" tag="1002" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="FedEx Account" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S93-Kh-Ken">
+                        <rect key="frame" x="222" y="21" width="360" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="BU6-at-dQN"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                        <connections>
+                            <outlet property="delegate" destination="bXD-CI-k65" id="psX-na-bPK"/>
+                        </connections>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(FedEx xxx company)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Eyi-qc-guv">
+                        <rect key="frame" x="51" y="38" width="166" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8u-nM-LOR">
+                        <rect key="frame" x="51" y="13" width="166" height="30"/>
+                        <connections>
+                            <action selector="clickedAccountButton:" destination="bXD-CI-k65" eventType="touchUpInside" id="o7N-yW-gtx"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="S93-Kh-Ken" firstAttribute="leading" secondItem="CD2-gl-ZHe" secondAttribute="trailing" constant="5" id="2hF-rX-jQv"/>
+                    <constraint firstItem="Eyi-qc-guv" firstAttribute="trailing" secondItem="CD2-gl-ZHe" secondAttribute="trailing" id="2o2-Jk-pD9"/>
+                    <constraint firstItem="CD2-gl-ZHe" firstAttribute="leading" secondItem="NNS-OD-Ynw" secondAttribute="trailing" constant="3" id="4to-Dy-qRH"/>
+                    <constraint firstItem="S93-Kh-Ken" firstAttribute="centerY" secondItem="AjQ-xo-F7H" secondAttribute="centerY" id="Dif-vt-gX3"/>
+                    <constraint firstItem="o8u-nM-LOR" firstAttribute="top" secondItem="CD2-gl-ZHe" secondAttribute="top" id="IhT-5s-Qzu"/>
+                    <constraint firstItem="Eyi-qc-guv" firstAttribute="top" secondItem="CD2-gl-ZHe" secondAttribute="bottom" constant="-5" id="Jig-UF-a2J"/>
+                    <constraint firstItem="Eyi-qc-guv" firstAttribute="leading" secondItem="CD2-gl-ZHe" secondAttribute="leading" id="OZ9-ow-LOU"/>
+                    <constraint firstItem="NNS-OD-Ynw" firstAttribute="leading" secondItem="AjQ-xo-F7H" secondAttribute="leadingMargin" constant="15" id="Y7w-tu-FFO"/>
+                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="Eyi-qc-guv" secondAttribute="bottom" constant="5" id="fQ5-rP-FjU"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="S93-Kh-Ken" secondAttribute="trailing" constant="10" id="j9N-B7-UjR"/>
+                    <constraint firstItem="CD2-gl-ZHe" firstAttribute="top" secondItem="AjQ-xo-F7H" secondAttribute="topMargin" constant="5" id="jlG-Ni-Uxt"/>
+                    <constraint firstItem="o8u-nM-LOR" firstAttribute="height" secondItem="CD2-gl-ZHe" secondAttribute="height" id="sAU-7C-fUh"/>
+                    <constraint firstItem="o8u-nM-LOR" firstAttribute="width" secondItem="CD2-gl-ZHe" secondAttribute="width" id="tBZ-Ad-pBD"/>
+                    <constraint firstItem="NNS-OD-Ynw" firstAttribute="centerY" secondItem="AjQ-xo-F7H" secondAttribute="centerY" id="wGA-Uf-k6T"/>
+                    <constraint firstItem="o8u-nM-LOR" firstAttribute="leading" secondItem="CD2-gl-ZHe" secondAttribute="leading" id="xER-3q-PAS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="companyNameLabel" destination="Eyi-qc-guv" id="6Tc-TN-7ci"/>
+                <outlet property="fedexAccountTF" destination="S93-Kh-Ken" id="PmW-G1-Oj8"/>
+                <outlet property="selectButton" destination="NNS-OD-Ynw" id="Ar7-Js-RCl"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="33.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_checkbox_normal" width="16" height="16"/>
+        <image name="icon_checkbox_sel" width="14" height="14"/>
+    </resources>
+</document>

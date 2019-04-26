@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="9ag-Yf-CFI" customClass="SSTWarehouseTaxView" customModule="sst" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="420" height="91"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LrV-3o-QLp">
+                    <rect key="frame" x="0.0" y="7" width="26.5" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.6000058650970459" green="0.59999251365661621" blue="0.5999951958656311" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMc-9M-dQb">
+                    <rect key="frame" x="210" y="7.5" width="26.5" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.6000058650970459" green="0.59999251365661621" blue="0.5999951958656311" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cey-fm-YcA" userLabel="Line">
+                    <rect key="frame" x="0.0" y="29" width="420" height="1"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="vWj-O2-9Ys"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="cey-fm-YcA" firstAttribute="top" secondItem="gAc-On-zjb" secondAttribute="top" constant="29" id="0DK-8F-7hO"/>
+                <constraint firstItem="eMc-9M-dQb" firstAttribute="leading" secondItem="9ag-Yf-CFI" secondAttribute="centerX" id="Bk0-09-xfw"/>
+                <constraint firstItem="LrV-3o-QLp" firstAttribute="top" secondItem="gAc-On-zjb" secondAttribute="top" constant="7" id="CKd-tM-zSb"/>
+                <constraint firstAttribute="trailing" secondItem="cey-fm-YcA" secondAttribute="trailing" id="SD3-vI-cHL"/>
+                <constraint firstItem="cey-fm-YcA" firstAttribute="leading" secondItem="LrV-3o-QLp" secondAttribute="leading" id="W1w-SZ-IH3"/>
+                <constraint firstItem="gAc-On-zjb" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eMc-9M-dQb" secondAttribute="trailing" constant="20" id="jgl-mJ-0Bo"/>
+                <constraint firstItem="LrV-3o-QLp" firstAttribute="leading" secondItem="gAc-On-zjb" secondAttribute="leading" id="rmr-ly-Oa3"/>
+                <constraint firstItem="eMc-9M-dQb" firstAttribute="centerY" secondItem="LrV-3o-QLp" secondAttribute="centerY" id="z89-zK-CJa"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="gAc-On-zjb"/>
+            <connections>
+                <outlet property="taxFeeLabel" destination="eMc-9M-dQb" id="vXa-kn-hrc"/>
+                <outlet property="warehouseNameLabel" destination="LrV-3o-QLp" id="qv0-LU-VzH"/>
+            </connections>
+            <point key="canvasLocation" x="-3" y="-301.5"/>
+        </view>
+    </objects>
+</document>

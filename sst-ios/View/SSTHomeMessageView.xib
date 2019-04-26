@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="KK1-Ca-qtH" userLabel="SSTHomeMessageView" customClass="SSTHomeMessageView" customModule="sst" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vdd-a3-oir">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.31372549019607843" green="0.31372549019607843" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r5j-Ry-A41">
+                    <rect key="frame" x="10" y="10" width="355" height="270"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" alpha="0.95999999999999996" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="pba-o7-EYt">
+                            <rect key="frame" x="0.0" y="0.0" width="355" height="314"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <outlet property="dataSource" destination="KK1-Ca-qtH" id="tVM-Ue-gni"/>
+                                <outlet property="delegate" destination="KK1-Ca-qtH" id="PiD-nE-2GG"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <imageView userInteractionEnabled="NO" alpha="0.01" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_left" translatesAutoresizingMaskIntoConstraints="NO" id="oMn-tW-IS4">
+                    <rect key="frame" x="18" y="0.0" width="15" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="FFU-3C-0ge"/>
+                        <constraint firstAttribute="width" constant="15" id="dDr-2n-75o"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="vdd-a3-oir" firstAttribute="leading" secondItem="KK1-Ca-qtH" secondAttribute="leading" id="CbM-1V-t7y"/>
+                <constraint firstAttribute="trailing" secondItem="vdd-a3-oir" secondAttribute="trailing" id="J9t-rm-1yr"/>
+                <constraint firstItem="oMn-tW-IS4" firstAttribute="top" secondItem="KK1-Ca-qtH" secondAttribute="top" id="PXx-tL-zrF"/>
+                <constraint firstAttribute="bottom" secondItem="vdd-a3-oir" secondAttribute="bottom" id="Saf-bD-LmJ"/>
+                <constraint firstItem="vdd-a3-oir" firstAttribute="top" secondItem="KK1-Ca-qtH" secondAttribute="top" id="XBl-eZ-prw"/>
+                <constraint firstItem="oMn-tW-IS4" firstAttribute="leading" secondItem="KK1-Ca-qtH" secondAttribute="leading" constant="18" id="a59-ze-LtL"/>
+            </constraints>
+            <connections>
+                <outlet property="bgView" destination="vdd-a3-oir" id="ZM5-9Z-Ie4"/>
+                <outlet property="outerTBView" destination="r5j-Ry-A41" id="qCA-Tn-bSa"/>
+                <outlet property="tableView" destination="pba-o7-EYt" id="ngM-Ke-g2n"/>
+            </connections>
+            <point key="canvasLocation" x="-1190.5" y="-209.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home_left" width="11" height="8"/>
+    </resources>
+</document>

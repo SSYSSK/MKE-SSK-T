@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SSTSectionHeadCell" id="fee-ZZ-ySn" customClass="SSTSectionHeadCell" customModule="sst_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fee-ZZ-ySn" id="xwX-FZ-kpX">
+                <frame key="frameInset" width="600" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_shipping" translatesAutoresizingMaskIntoConstraints="NO" id="KVa-sq-os7">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="2yj-dp-YHn"/>
+                            <constraint firstAttribute="width" secondItem="KVa-sq-os7" secondAttribute="height" multiplier="1:1" id="5ft-Jq-Y2x"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gic-vK-Iy8">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Fic-a4-a8l"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XdT-hU-pAE" userLabel="Line">
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="QcH-Yc-b7K"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Gic-vK-Iy8" secondAttribute="trailing" constant="10" id="51h-in-KS8"/>
+                    <constraint firstAttribute="bottom" secondItem="XdT-hU-pAE" secondAttribute="bottom" id="ApV-ds-t9q"/>
+                    <constraint firstItem="Gic-vK-Iy8" firstAttribute="leading" secondItem="KVa-sq-os7" secondAttribute="trailing" constant="10" id="ORA-Ae-1cT"/>
+                    <constraint firstItem="Gic-vK-Iy8" firstAttribute="centerY" secondItem="KVa-sq-os7" secondAttribute="centerY" id="Pcs-sF-L7d"/>
+                    <constraint firstItem="XdT-hU-pAE" firstAttribute="leading" secondItem="xwX-FZ-kpX" secondAttribute="leading" id="cak-ux-x7q"/>
+                    <constraint firstAttribute="trailing" secondItem="XdT-hU-pAE" secondAttribute="trailing" id="ksh-CZ-eio"/>
+                    <constraint firstItem="KVa-sq-os7" firstAttribute="leading" secondItem="xwX-FZ-kpX" secondAttribute="leading" constant="15" id="sDs-3f-zL6"/>
+                    <constraint firstItem="KVa-sq-os7" firstAttribute="centerY" secondItem="xwX-FZ-kpX" secondAttribute="centerY" id="seK-mC-1u0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="icon" destination="KVa-sq-os7" id="Fnc-7d-UT3"/>
+                <outlet property="title" destination="Gic-vK-Iy8" id="Tui-TT-78e"/>
+            </connections>
+            <point key="canvasLocation" x="365" y="215"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_shipping" width="24" height="24"/>
+    </resources>
+</document>

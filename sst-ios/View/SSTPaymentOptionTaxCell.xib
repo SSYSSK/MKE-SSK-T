@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SSTPaymentOptionTaxCell" rowHeight="259" id="1eg-Au-MUa" customClass="SSTPaymentOptionTaxCell" customModule="sst" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="259"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1eg-Au-MUa" id="UDV-yp-qtk">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="258.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tax" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SaL-yB-Hp1">
+                        <rect key="frame" x="20" y="14" width="65" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="XUh-lN-lxE"/>
+                            <constraint firstAttribute="width" constant="65" id="dgb-kD-Nqs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.40000396966934204" green="0.39999467134475708" blue="0.39999657869338989" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="BFf-UZ-qew">
+                        <rect key="frame" x="95" y="14" width="350" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Joe-PN-kOf">
+                        <rect key="frame" x="455" y="14" width="130" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="130" id="K1T-er-jBX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="CA tax exemption">
+                            <color key="titleColor" red="0.43921568630000002" green="0.43529411759999997" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="clickedTaxExemptionButton:" destination="1eg-Au-MUa" eventType="touchUpInside" id="6Ak-pp-nQ9"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expiration Date xxxx-xx-xx" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0vv-Il-RPG">
+                        <rect key="frame" x="95" y="37" width="490" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="1" green="0.086274509799999996" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="highlightedColor" red="0.9212740385" green="0.086274509799999996" blue="0.50237980770000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L66-pn-GoQ">
+                        <rect key="frame" x="96" y="53.5" width="504" height="203.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hkJ-I3-6Ht" userLabel="Line">
+                        <rect key="frame" x="20" y="257.5" width="580" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="9tX-YF-Vdq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="0vv-Il-RPG" firstAttribute="leading" secondItem="BFf-UZ-qew" secondAttribute="leading" id="EFc-Kr-hx9"/>
+                    <constraint firstAttribute="trailing" secondItem="L66-pn-GoQ" secondAttribute="trailing" id="GJ7-tD-ucd"/>
+                    <constraint firstItem="BFf-UZ-qew" firstAttribute="centerY" secondItem="SaL-yB-Hp1" secondAttribute="centerY" id="H2O-oD-zB4"/>
+                    <constraint firstAttribute="trailing" secondItem="Joe-PN-kOf" secondAttribute="trailing" constant="15" id="I8O-U1-nOL"/>
+                    <constraint firstItem="L66-pn-GoQ" firstAttribute="top" secondItem="0vv-Il-RPG" secondAttribute="bottom" constant="3" id="KoI-x7-1e5"/>
+                    <constraint firstItem="Joe-PN-kOf" firstAttribute="centerY" secondItem="SaL-yB-Hp1" secondAttribute="centerY" id="LC9-4j-e2n"/>
+                    <constraint firstItem="BFf-UZ-qew" firstAttribute="top" secondItem="UDV-yp-qtk" secondAttribute="top" constant="14" id="MEf-jk-gIx"/>
+                    <constraint firstAttribute="trailing" secondItem="hkJ-I3-6Ht" secondAttribute="trailing" id="SPv-u6-ycw"/>
+                    <constraint firstItem="L66-pn-GoQ" firstAttribute="top" secondItem="BFf-UZ-qew" secondAttribute="bottom" priority="750" id="UIj-on-Xcq"/>
+                    <constraint firstAttribute="bottom" secondItem="L66-pn-GoQ" secondAttribute="bottom" constant="1" id="UmP-By-nvv"/>
+                    <constraint firstItem="BFf-UZ-qew" firstAttribute="height" secondItem="SaL-yB-Hp1" secondAttribute="height" id="Wih-PC-wvu"/>
+                    <constraint firstItem="Joe-PN-kOf" firstAttribute="trailing" secondItem="0vv-Il-RPG" secondAttribute="trailing" id="Z7V-eP-DNu"/>
+                    <constraint firstItem="L66-pn-GoQ" firstAttribute="leading" secondItem="BFf-UZ-qew" secondAttribute="leading" constant="1" id="bMM-cn-KBw"/>
+                    <constraint firstAttribute="bottom" secondItem="hkJ-I3-6Ht" secondAttribute="bottom" id="cBQ-d3-8fP"/>
+                    <constraint firstItem="BFf-UZ-qew" firstAttribute="leading" secondItem="UDV-yp-qtk" secondAttribute="leading" constant="95" id="jyc-kP-Yd4"/>
+                    <constraint firstItem="Joe-PN-kOf" firstAttribute="height" secondItem="SaL-yB-Hp1" secondAttribute="height" id="lGD-xl-Ptl"/>
+                    <constraint firstItem="0vv-Il-RPG" firstAttribute="top" secondItem="Joe-PN-kOf" secondAttribute="bottom" constant="3" id="pCY-nn-LC0"/>
+                    <constraint firstItem="hkJ-I3-6Ht" firstAttribute="leading" secondItem="SaL-yB-Hp1" secondAttribute="leading" id="pb2-aw-clp"/>
+                    <constraint firstItem="SaL-yB-Hp1" firstAttribute="leading" secondItem="UDV-yp-qtk" secondAttribute="leading" constant="20" id="uor-vk-NNx"/>
+                    <constraint firstItem="Joe-PN-kOf" firstAttribute="leading" secondItem="BFf-UZ-qew" secondAttribute="trailing" constant="10" id="yG0-aJ-D2e"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="applyTaxBtn" destination="Joe-PN-kOf" id="IAb-fM-adO"/>
+                <outlet property="date" destination="0vv-Il-RPG" id="129-DS-h2z"/>
+                <outlet property="tax" destination="BFf-UZ-qew" id="O3l-ty-i4J"/>
+                <outlet property="taxLabelLeadingConstraint" destination="jyc-kP-Yd4" id="aeR-K4-sk1"/>
+                <outlet property="taxTextLabel" destination="SaL-yB-Hp1" id="VYg-ll-CY2"/>
+                <outlet property="warehouseView" destination="L66-pn-GoQ" id="tPI-dh-p5P"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="158.5"/>
+        </tableViewCell>
+    </objects>
+</document>

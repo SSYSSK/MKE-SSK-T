@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="SSTItemDetailsInfoCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="SSTItemDetailsInfoCell" rowHeight="-83" id="KGk-i7-Jjw" customClass="SSTItemDetailsInfoCell" customModule="sst" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="139.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9UA-lw-aFE">
+                        <rect key="frame" x="35" y="11" width="530" height="74"/>
+                        <string key="text">iphone6 plus iphone6 plus iphone6 plus iphone6 plus iphone6 plus iphone6 plus iphone6 plus iphone6 plus iphone6 plus iphone6 plus iphone6 plus iphone6 plus iphone6 plus </string>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dsa-mR-j9J">
+                        <rect key="frame" x="400" y="85" width="180" height="45"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFH-wb-gDG">
+                                <rect key="frame" x="0.0" y="-7.5" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="E2W-6c-cHE"/>
+                                    <constraint firstAttribute="height" constant="60" id="c9P-Gk-utV"/>
+                                </constraints>
+                                <state key="normal" image="icon_reduce"/>
+                                <state key="disabled" image="icon_reduceNo"/>
+                                <state key="highlighted" image="icon_reduceH"/>
+                                <connections>
+                                    <action selector="clickedMinusButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="SwX-Ee-S0X"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NgT-Lk-27y">
+                                <rect key="frame" x="60" y="14.5" width="60" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="wK8-bg-97V"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F1s-iI-82d">
+                                <rect key="frame" x="120" y="-7.5" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Cc2-zP-now"/>
+                                    <constraint firstAttribute="width" constant="60" id="zFT-xm-kRk"/>
+                                </constraints>
+                                <state key="normal" image="icon_plus"/>
+                                <state key="disabled" image="icon_plusNo"/>
+                                <state key="highlighted" image="icon_plusH"/>
+                                <connections>
+                                    <action selector="clickedPlusButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2r3-vr-EQs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="hFH-wb-gDG" firstAttribute="centerY" secondItem="dsa-mR-j9J" secondAttribute="centerY" id="3Wf-R9-ovi"/>
+                            <constraint firstAttribute="height" constant="45" id="BA7-fH-h4b"/>
+                            <constraint firstItem="hFH-wb-gDG" firstAttribute="leading" secondItem="dsa-mR-j9J" secondAttribute="leading" id="H0q-eV-RYH"/>
+                            <constraint firstItem="NgT-Lk-27y" firstAttribute="centerY" secondItem="dsa-mR-j9J" secondAttribute="centerY" id="TCB-Sd-IE3"/>
+                            <constraint firstItem="NgT-Lk-27y" firstAttribute="centerX" secondItem="dsa-mR-j9J" secondAttribute="centerX" id="WWv-kQ-sID"/>
+                            <constraint firstItem="F1s-iI-82d" firstAttribute="centerY" secondItem="dsa-mR-j9J" secondAttribute="centerY" id="Z2d-SO-ceM"/>
+                            <constraint firstAttribute="trailing" secondItem="F1s-iI-82d" secondAttribute="trailing" id="lwe-7b-ZsL"/>
+                            <constraint firstAttribute="width" constant="180" id="oCm-g0-Lgc"/>
+                            <constraint firstItem="hFH-wb-gDG" firstAttribute="leading" secondItem="dsa-mR-j9J" secondAttribute="leading" id="sPM-KV-Zg9"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uf6-oV-3hA">
+                        <rect key="frame" x="35" y="94" width="11.5" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Mc8-ZG-gPd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Mc8-ZG-gPd"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlz-vd-zug">
+                        <rect key="frame" x="56.5" y="108" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uf6-oV-3hA" firstAttribute="top" secondItem="9UA-lw-aFE" secondAttribute="bottom" constant="9" id="5r7-bJ-1G4"/>
+                    <constraint firstItem="dsa-mR-j9J" firstAttribute="top" secondItem="9UA-lw-aFE" secondAttribute="bottom" id="7Kt-yP-Nsw"/>
+                    <constraint firstItem="dsa-mR-j9J" firstAttribute="centerY" secondItem="uf6-oV-3hA" secondAttribute="centerY" id="BRK-Mn-fZS"/>
+                    <constraint firstItem="9UA-lw-aFE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="K2h-Ji-84n"/>
+                    <constraint firstItem="uf6-oV-3hA" firstAttribute="leading" secondItem="9UA-lw-aFE" secondAttribute="leading" id="N0i-2e-Mfk"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="dsa-mR-j9J" secondAttribute="trailing" id="NQa-Ag-HE8"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="uf6-oV-3hA" secondAttribute="bottom" constant="8" id="YcH-eX-8ub"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="9UA-lw-aFE" secondAttribute="trailing" constant="15" id="aeY-Vp-Ssx"/>
+                    <constraint firstItem="9UA-lw-aFE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="jn2-M0-zCC"/>
+                    <constraint firstItem="dlz-vd-zug" firstAttribute="leading" secondItem="uf6-oV-3hA" secondAttribute="trailing" constant="10" id="pG4-R4-o6u"/>
+                    <constraint firstItem="dlz-vd-zug" firstAttribute="centerY" secondItem="uf6-oV-3hA" secondAttribute="centerY" id="ysG-1g-WUh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addButton" destination="F1s-iI-82d" id="icc-15-YyC"/>
+                <outlet property="clickView" destination="dsa-mR-j9J" id="G9o-8d-egW"/>
+                <outlet property="listPriceLabel" destination="dlz-vd-zug" id="1Gw-Ui-nWI"/>
+                <outlet property="minusButton" destination="hFH-wb-gDG" id="4qT-CG-zl0"/>
+                <outlet property="nameL" destination="9UA-lw-aFE" id="fDH-cl-632"/>
+                <outlet property="priceLabel" destination="uf6-oV-3hA" id="jSp-Ef-caP"/>
+                <outlet property="qtyTF" destination="NgT-Lk-27y" id="4th-YV-QDh"/>
+            </connections>
+            <point key="canvasLocation" x="-18" y="321"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_plus" width="20" height="20"/>
+        <image name="icon_plusH" width="20" height="20"/>
+        <image name="icon_plusNo" width="20" height="20"/>
+        <image name="icon_reduce" width="20" height="20"/>
+        <image name="icon_reduceH" width="20" height="20"/>
+        <image name="icon_reduceNo" width="20" height="20"/>
+    </resources>
+</document>

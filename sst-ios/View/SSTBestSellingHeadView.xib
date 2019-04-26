@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SSTBestSellingHeadView" id="U6b-Vx-4bR" customClass="SSTBestSellingHeadView" customModule="sst" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="85"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VFy-6Q-ARC">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="0.0"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iH9-1x-xZh">
+                            <rect key="frame" x="90" y="-0.5" width="420" height="1"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="rHa-Zz-PbR"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Recommendation  " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VuX-ha-Ol4">
+                            <rect key="frame" x="238" y="-8" width="124.5" height="17"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="iH9-1x-xZh" firstAttribute="centerY" secondItem="VFy-6Q-ARC" secondAttribute="centerY" id="NrF-CE-JPf"/>
+                        <constraint firstItem="iH9-1x-xZh" firstAttribute="centerX" secondItem="VFy-6Q-ARC" secondAttribute="centerX" id="aqw-S1-qus"/>
+                        <constraint firstAttribute="height" id="bme-t4-DxK"/>
+                        <constraint firstItem="VuX-ha-Ol4" firstAttribute="centerX" secondItem="VFy-6Q-ARC" secondAttribute="centerX" id="hWB-9R-aZf"/>
+                        <constraint firstItem="iH9-1x-xZh" firstAttribute="width" secondItem="VFy-6Q-ARC" secondAttribute="width" multiplier="0.7" id="jzu-7s-geq"/>
+                        <constraint firstItem="VuX-ha-Ol4" firstAttribute="centerY" secondItem="VFy-6Q-ARC" secondAttribute="centerY" id="nSD-90-NuN"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4XZ-Y8-Q5E">
+                    <rect key="frame" x="0.0" y="2" width="600" height="83"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="300" placeholderIntrinsicHeight="44" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOh-7B-pD9">
+                            <rect key="frame" x="0.0" y="-2" width="300" height="85"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                            <state key="normal" title="Best Selling">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickedBestSellingEvent:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="Kb2-zc-aSW"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="300" placeholderIntrinsicHeight="44" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEP-9J-PNc">
+                            <rect key="frame" x="300" y="-2" width="300" height="85"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                            <state key="normal" title="Most Popular Today">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickedBestSellingEvent:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="WZr-A7-8Sp"/>
+                                <action selector="clickedMostPopularEvent:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="jFC-5e-ly8"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="HEP-9J-PNc" firstAttribute="leading" secondItem="lOh-7B-pD9" secondAttribute="trailing" id="07P-B3-cQW"/>
+                        <constraint firstAttribute="bottom" secondItem="HEP-9J-PNc" secondAttribute="bottom" id="7j7-oe-C39"/>
+                        <constraint firstAttribute="bottom" secondItem="lOh-7B-pD9" secondAttribute="bottom" id="9dz-jZ-PnI"/>
+                        <constraint firstAttribute="trailing" secondItem="HEP-9J-PNc" secondAttribute="trailing" id="DxS-Wb-j9s"/>
+                        <constraint firstItem="HEP-9J-PNc" firstAttribute="top" secondItem="4XZ-Y8-Q5E" secondAttribute="top" constant="-2" id="YHi-IZ-TvC"/>
+                        <constraint firstItem="lOh-7B-pD9" firstAttribute="top" secondItem="4XZ-Y8-Q5E" secondAttribute="top" constant="-2" id="qbL-za-0R5"/>
+                        <constraint firstItem="lOh-7B-pD9" firstAttribute="width" secondItem="4XZ-Y8-Q5E" secondAttribute="width" multiplier="0.5" id="rlU-7z-D0H"/>
+                        <constraint firstItem="lOh-7B-pD9" firstAttribute="leading" secondItem="4XZ-Y8-Q5E" secondAttribute="leading" id="vbJ-a5-3PN"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tnm-zb-oTr">
+                    <rect key="frame" x="0.0" y="83.5" width="600" height="1"/>
+                    <color key="backgroundColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="1ca-1A-hRa"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p3V-y9-lIs">
+                    <rect key="frame" x="20" y="83" width="260" height="2"/>
+                    <color key="backgroundColor" red="0.43921568630000002" green="0.43529411759999997" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="6Ut-8H-Gh0"/>
+                        <constraint firstAttribute="width" constant="260" id="R9q-gE-m9f"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="VFy-6Q-ARC" secondAttribute="trailing" id="3Qf-YH-0Hs"/>
+                <constraint firstItem="4XZ-Y8-Q5E" firstAttribute="top" secondItem="VFy-6Q-ARC" secondAttribute="bottom" constant="2" id="3re-pB-hS7"/>
+                <constraint firstAttribute="bottom" secondItem="tnm-zb-oTr" secondAttribute="bottom" constant="0.5" id="4Dm-CW-dub"/>
+                <constraint firstItem="tnm-zb-oTr" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="5hB-BF-puw"/>
+                <constraint firstItem="4XZ-Y8-Q5E" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="CvN-WQ-3s6"/>
+                <constraint firstAttribute="bottom" secondItem="p3V-y9-lIs" secondAttribute="bottom" id="D8o-1t-SNt"/>
+                <constraint firstAttribute="bottom" secondItem="4XZ-Y8-Q5E" secondAttribute="bottom" id="UzK-Xx-gMx"/>
+                <constraint firstItem="VFy-6Q-ARC" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="W7C-tn-POW"/>
+                <constraint firstAttribute="trailing" secondItem="tnm-zb-oTr" secondAttribute="trailing" id="XHD-2K-NZS"/>
+                <constraint firstAttribute="trailing" secondItem="4XZ-Y8-Q5E" secondAttribute="trailing" id="f05-b5-bvB"/>
+                <constraint firstItem="VFy-6Q-ARC" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="iAh-yt-8zp"/>
+                <constraint firstItem="p3V-y9-lIs" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="20" id="svx-8y-znO"/>
+            </constraints>
+            <connections>
+                <outlet property="bestSellingBtn" destination="lOh-7B-pD9" id="SzI-jz-aNT"/>
+                <outlet property="indexView" destination="p3V-y9-lIs" id="P38-1i-oIY"/>
+                <outlet property="indexViewLeftConstraint" destination="svx-8y-znO" id="r28-25-RO9"/>
+                <outlet property="indexViewWidthConstraint" destination="R9q-gE-m9f" id="PXC-hf-BOb"/>
+                <outlet property="mostPopularBtn" destination="HEP-9J-PNc" id="k2o-4G-Qnu"/>
+            </connections>
+            <point key="canvasLocation" x="364" y="189.5"/>
+        </collectionReusableView>
+    </objects>
+</document>

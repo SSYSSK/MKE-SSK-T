@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="t73-0y-1cF" customClass="SSTMessageBox" customModule="sst_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view alpha="0.44999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gg5-kv-K88">
+                    <color key="backgroundColor" red="0.58785994760000004" green="0.58785994760000004" blue="0.58785994760000004" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mZN-N8-d5B">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_messageLogo" translatesAutoresizingMaskIntoConstraints="NO" id="lf9-dR-Xpt">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="F2f-iS-7PN"/>
+                                <constraint firstAttribute="height" constant="50" id="Lah-nB-DVa"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DK8-in-1Uo">
+                            <string key="text">Your total amount due exceeded the maximum ship first pay later allowed open balance.You may swifth to PayPal as payment option without limit,or pay your ship first pay later due amount in full or partially first in order to select ship first pay later payment option.</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.68627450980392157" green="0.68627450980392157" blue="0.76470588235294112" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rvm-jO-0RI">
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="itI-IB-sW5"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IkH-wQ-kZL">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="nSj-b7-Ry2"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                            <state key="normal" title="OK">
+                                <color key="titleColor" red="0.43921568630000002" green="0.43529411759999997" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickedOKAction:" destination="t73-0y-1cF" eventType="touchUpInside" id="oZv-E4-sEE"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="DK8-in-1Uo" firstAttribute="leading" secondItem="mZN-N8-d5B" secondAttribute="leading" constant="10" id="2AQ-P8-gnL"/>
+                        <constraint firstItem="DK8-in-1Uo" firstAttribute="top" secondItem="lf9-dR-Xpt" secondAttribute="bottom" id="4Hv-9b-C6C"/>
+                        <constraint firstItem="rvm-jO-0RI" firstAttribute="leading" secondItem="mZN-N8-d5B" secondAttribute="leading" id="PGY-gG-Wf1"/>
+                        <constraint firstAttribute="trailing" secondItem="IkH-wQ-kZL" secondAttribute="trailing" constant="10" id="SjN-R4-LyK"/>
+                        <constraint firstItem="lf9-dR-Xpt" firstAttribute="top" secondItem="mZN-N8-d5B" secondAttribute="top" constant="10" id="Tmp-CY-TOF"/>
+                        <constraint firstAttribute="trailing" secondItem="rvm-jO-0RI" secondAttribute="trailing" id="VgB-5l-JIG"/>
+                        <constraint firstAttribute="bottom" secondItem="IkH-wQ-kZL" secondAttribute="bottom" id="WE5-ty-J5h"/>
+                        <constraint firstItem="rvm-jO-0RI" firstAttribute="top" secondItem="DK8-in-1Uo" secondAttribute="bottom" constant="5" id="Xi4-74-wJx"/>
+                        <constraint firstItem="lf9-dR-Xpt" firstAttribute="centerX" secondItem="mZN-N8-d5B" secondAttribute="centerX" id="aG2-em-ozQ"/>
+                        <constraint firstItem="IkH-wQ-kZL" firstAttribute="leading" secondItem="mZN-N8-d5B" secondAttribute="leading" constant="10" id="eKQ-HU-7zN"/>
+                        <constraint firstItem="IkH-wQ-kZL" firstAttribute="top" secondItem="rvm-jO-0RI" secondAttribute="bottom" id="jyu-BA-Rcw"/>
+                        <constraint firstAttribute="height" constant="250" id="rMK-Mn-ftl"/>
+                        <constraint firstAttribute="trailing" secondItem="DK8-in-1Uo" secondAttribute="trailing" constant="10" id="uO4-i0-oTK"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Gg5-kv-K88" firstAttribute="top" secondItem="t73-0y-1cF" secondAttribute="top" id="86T-GM-xPA"/>
+                <constraint firstItem="mZN-N8-d5B" firstAttribute="centerX" secondItem="t73-0y-1cF" secondAttribute="centerX" id="Cpu-cq-RCL"/>
+                <constraint firstItem="mZN-N8-d5B" firstAttribute="width" secondItem="t73-0y-1cF" secondAttribute="width" multiplier="3:4" id="WH7-lX-KSj"/>
+                <constraint firstAttribute="trailing" secondItem="Gg5-kv-K88" secondAttribute="trailing" id="WX4-AD-ahM"/>
+                <constraint firstItem="mZN-N8-d5B" firstAttribute="centerY" secondItem="t73-0y-1cF" secondAttribute="centerY" id="dsI-g9-VgV"/>
+                <constraint firstAttribute="bottom" secondItem="Gg5-kv-K88" secondAttribute="bottom" id="eF7-L2-eXF"/>
+                <constraint firstItem="Gg5-kv-K88" firstAttribute="leading" secondItem="t73-0y-1cF" secondAttribute="leading" id="ucw-e1-VP1"/>
+            </constraints>
+            <connections>
+                <outlet property="message" destination="DK8-in-1Uo" id="rqI-9l-VPN"/>
+                <outlet property="messageViewHeightConstraint" destination="rMK-Mn-ftl" id="7nC-8q-byF"/>
+            </connections>
+            <point key="canvasLocation" x="26.5" y="254.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_messageLogo" width="94" height="31"/>
+    </resources>
+</document>

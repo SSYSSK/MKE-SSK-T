@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SSTAppForCODFail" customModule="sst_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="94"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_more_cod_fail" translatesAutoresizingMaskIntoConstraints="NO" id="mWh-lu-5yO">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="38" id="UYl-uz-lEc"/>
+                        <constraint firstAttribute="height" constant="38" id="rRw-8g-pgi"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDn-x2-nwV">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="pDU-Wg-ir0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.16498282068062831" green="0.16498282068062831" blue="0.16498282068062831" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="car-cj-eHt">
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.42625163612565442" green="0.42625163612565442" blue="0.42625163612565442" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwd-EU-7le">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="EO2-q0-l23"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="View application records">
+                        <color key="titleColor" red="0.43921568630000002" green="0.43529411759999997" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="viewResors:" destination="iN0-l3-epB" eventType="touchUpInside" id="uH2-qq-GHF"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="car-cj-eHt" firstAttribute="leading" secondItem="mWh-lu-5yO" secondAttribute="trailing" constant="19" id="1g7-rs-Is7"/>
+                <constraint firstItem="mWh-lu-5yO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="5Hj-zw-RXv"/>
+                <constraint firstItem="bwd-EU-7le" firstAttribute="trailing" secondItem="car-cj-eHt" secondAttribute="trailing" id="ACY-xK-MU3"/>
+                <constraint firstItem="DDn-x2-nwV" firstAttribute="leading" secondItem="mWh-lu-5yO" secondAttribute="trailing" constant="19" id="CNb-KN-gcV"/>
+                <constraint firstItem="mWh-lu-5yO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="33" id="DnI-4S-67c"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="car-cj-eHt" secondAttribute="bottom" constant="20" id="LpY-KE-wlb"/>
+                <constraint firstItem="bwd-EU-7le" firstAttribute="top" secondItem="car-cj-eHt" secondAttribute="bottom" constant="3" id="S2n-E6-gsV"/>
+                <constraint firstItem="bwd-EU-7le" firstAttribute="leading" secondItem="car-cj-eHt" secondAttribute="leading" id="c0Y-p7-59F"/>
+                <constraint firstAttribute="trailing" secondItem="DDn-x2-nwV" secondAttribute="trailing" constant="35" id="gcy-4G-Z46"/>
+                <constraint firstItem="car-cj-eHt" firstAttribute="top" secondItem="DDn-x2-nwV" secondAttribute="bottom" constant="2" id="k49-IF-abu"/>
+                <constraint firstItem="DDn-x2-nwV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="13" id="lpE-XN-clS"/>
+                <constraint firstAttribute="trailing" secondItem="car-cj-eHt" secondAttribute="trailing" constant="35" id="pyP-Qi-MLK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="contentLabel" destination="car-cj-eHt" id="E1r-xL-72x"/>
+                <outlet property="iconImge" destination="mWh-lu-5yO" id="lnM-5n-KhN"/>
+                <outlet property="titleLabel" destination="DDn-x2-nwV" id="UKr-Pq-79F"/>
+            </connections>
+            <point key="canvasLocation" x="12" y="-234"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_more_cod_fail" width="91" height="91"/>
+    </resources>
+</document>

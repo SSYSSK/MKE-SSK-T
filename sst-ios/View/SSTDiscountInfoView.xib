@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="V0t-xI-aja" customClass="SSTDiscountInfoView" customModule="sst_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="35"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_discountFlag" translatesAutoresizingMaskIntoConstraints="NO" id="yhW-Dw-tPT">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="2J1-A8-qs2"/>
+                        <constraint firstAttribute="width" constant="20" id="dNY-2g-36d"/>
+                        <constraint firstAttribute="height" constant="20" id="dXD-ou-2Do"/>
+                        <constraint firstAttribute="height" constant="15" id="tAc-16-ZfL"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="dNY-2g-36d"/>
+                            <exclude reference="dXD-ou-2Do"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get extra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ZB1-U5-N1e">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="537" id="IN3-7P-wir"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="IN3-7P-wir"/>
+                        </mask>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.25490196078431371" green="0.25490196078431371" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZB1-U5-N1e" firstAttribute="centerY" secondItem="yhW-Dw-tPT" secondAttribute="centerY" id="7Vl-eU-1Nb"/>
+                <constraint firstItem="ZB1-U5-N1e" firstAttribute="leading" secondItem="yhW-Dw-tPT" secondAttribute="trailing" constant="10" id="DWe-XO-KfO"/>
+                <constraint firstItem="yhW-Dw-tPT" firstAttribute="leading" secondItem="V0t-xI-aja" secondAttribute="leading" constant="20" id="Ptq-b1-jgK"/>
+                <constraint firstItem="yhW-Dw-tPT" firstAttribute="centerY" secondItem="V0t-xI-aja" secondAttribute="centerY" id="Vrt-3Z-QnZ"/>
+                <constraint firstAttribute="trailing" secondItem="ZB1-U5-N1e" secondAttribute="trailing" constant="15" id="cqv-OY-6zZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="discountInfo" destination="ZB1-U5-N1e" id="M8V-sj-c3M"/>
+                <outlet property="icon" destination="yhW-Dw-tPT" id="eWd-Vf-Ahl"/>
+            </connections>
+            <point key="canvasLocation" x="412" y="101"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_discountFlag" width="15" height="15"/>
+    </resources>
+</document>

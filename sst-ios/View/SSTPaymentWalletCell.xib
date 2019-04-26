@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SSTPaymentWalletCell" rowHeight="101" id="EN3-cI-lQF" customClass="SSTPaymentWalletCell" customModule="sst" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="59"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EN3-cI-lQF" id="Caf-0e-IcW">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="58.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uwa-4q-H4N">
+                        <rect key="frame" x="37" y="10" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="1iE-7l-JhG"/>
+                            <constraint firstAttribute="width" secondItem="Uwa-4q-H4N" secondAttribute="height" multiplier="1:1" id="mDZ-ax-WJD"/>
+                        </constraints>
+                        <state key="normal" image="icon_checkbox_normal"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use Wallet Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Zht-dM-EPQ">
+                        <rect key="frame" x="59" y="14.5" width="116.5" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="117" id="wgE-ig-9Oq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bdh-RT-IPD">
+                        <rect key="frame" x="37" y="7.5" width="138.5" height="30"/>
+                        <connections>
+                            <action selector="selectWalletAction:" destination="EN3-cI-lQF" eventType="touchUpInside" id="s2j-NP-Udw"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJP-HM-y1J">
+                        <rect key="frame" x="178.5" y="8" width="52" height="29"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="($xx.xx)">
+                            <color key="titleColor" red="0.35593867301940918" green="0.37044435739517212" blue="0.97162264585494995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="clickedBalanceValueButton:" destination="EN3-cI-lQF" eventType="touchUpInside" id="N5J-lS-Uog"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTe-bY-eYf">
+                        <rect key="frame" x="59" y="28" width="52" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="WDq-RD-kMl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="($xx.xx)">
+                            <color key="titleColor" red="0.35593867299999998" green="0.37044435739999998" blue="0.97162264590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="clickedBalanceValueButton:" destination="EN3-cI-lQF" eventType="touchUpInside" id="FiL-ge-nY6"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hld-LE-tn0">
+                        <rect key="frame" x="498" y="14" width="9" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PaL-rv-b7W">
+                        <rect key="frame" x="510" y="10.5" width="70" height="24"/>
+                        <color key="backgroundColor" white="0.96999999999999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="rlP-KO-sMx"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="750" constant="70" id="xJj-Rq-yuw"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
+                        <connections>
+                            <outlet property="delegate" destination="EN3-cI-lQF" id="dm2-DY-bj6"/>
+                        </connections>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zfo-oj-Ocd">
+                        <rect key="frame" x="37" y="57.5" width="563" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="i8k-ZG-hTt"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="nTe-bY-eYf" firstAttribute="leading" secondItem="Zht-dM-EPQ" secondAttribute="leading" id="15N-1l-fOT"/>
+                    <constraint firstItem="Bdh-RT-IPD" firstAttribute="leading" secondItem="Uwa-4q-H4N" secondAttribute="leading" id="3OC-YT-ifC"/>
+                    <constraint firstAttribute="trailing" secondItem="PaL-rv-b7W" secondAttribute="trailing" constant="20" id="7Ks-Lf-PHQ"/>
+                    <constraint firstItem="Zht-dM-EPQ" firstAttribute="centerY" secondItem="Uwa-4q-H4N" secondAttribute="centerY" id="Cg7-eK-QFj"/>
+                    <constraint firstItem="Zfo-oj-Ocd" firstAttribute="leading" secondItem="Uwa-4q-H4N" secondAttribute="leading" id="DVC-W8-zFW"/>
+                    <constraint firstItem="Uwa-4q-H4N" firstAttribute="leading" secondItem="Caf-0e-IcW" secondAttribute="leading" constant="37" id="ELs-61-Mwy"/>
+                    <constraint firstItem="Uwa-4q-H4N" firstAttribute="top" secondItem="Caf-0e-IcW" secondAttribute="top" constant="10" id="TW7-Cc-nq1"/>
+                    <constraint firstItem="PaL-rv-b7W" firstAttribute="leading" secondItem="Hld-LE-tn0" secondAttribute="trailing" constant="3" id="VwH-7Q-gsB"/>
+                    <constraint firstItem="PJP-HM-y1J" firstAttribute="centerY" secondItem="Bdh-RT-IPD" secondAttribute="centerY" id="XJn-3A-rQv"/>
+                    <constraint firstAttribute="bottom" secondItem="Zfo-oj-Ocd" secondAttribute="bottom" id="eAV-e4-ICT"/>
+                    <constraint firstItem="PaL-rv-b7W" firstAttribute="centerY" secondItem="Uwa-4q-H4N" secondAttribute="centerY" id="iVe-DN-PJV"/>
+                    <constraint firstItem="Bdh-RT-IPD" firstAttribute="trailing" secondItem="Zht-dM-EPQ" secondAttribute="trailing" id="jTa-le-q6o"/>
+                    <constraint firstItem="Zht-dM-EPQ" firstAttribute="leading" secondItem="Uwa-4q-H4N" secondAttribute="trailing" constant="-3" id="kpS-7l-zew"/>
+                    <constraint firstItem="PJP-HM-y1J" firstAttribute="leading" secondItem="Bdh-RT-IPD" secondAttribute="trailing" constant="3" id="p3s-gd-87d"/>
+                    <constraint firstItem="nTe-bY-eYf" firstAttribute="top" secondItem="Zht-dM-EPQ" secondAttribute="bottom" constant="-2.5" id="raU-rW-CrQ"/>
+                    <constraint firstItem="Hld-LE-tn0" firstAttribute="centerY" secondItem="PaL-rv-b7W" secondAttribute="centerY" id="sVT-7E-XWU"/>
+                    <constraint firstItem="Bdh-RT-IPD" firstAttribute="centerY" secondItem="Uwa-4q-H4N" secondAttribute="centerY" id="toN-xK-x9t"/>
+                    <constraint firstAttribute="trailing" secondItem="Zfo-oj-Ocd" secondAttribute="trailing" id="xWB-7t-Quv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.96999999999999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="amount" destination="PaL-rv-b7W" id="Aas-Kg-rVL"/>
+                <outlet property="balance" destination="Zht-dM-EPQ" id="xsh-dL-xhF"/>
+                <outlet property="balanceValueButton" destination="PJP-HM-y1J" id="umv-NF-KCe"/>
+                <outlet property="balanceValueButton2" destination="nTe-bY-eYf" id="1eG-Vy-gIR"/>
+                <outlet property="currencyTypeLabel" destination="Hld-LE-tn0" id="xQQ-JN-bRh"/>
+                <outlet property="selectBtn" destination="Uwa-4q-H4N" id="Vlt-Gt-Edh"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="74.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_checkbox_normal" width="13" height="13"/>
+    </resources>
+</document>

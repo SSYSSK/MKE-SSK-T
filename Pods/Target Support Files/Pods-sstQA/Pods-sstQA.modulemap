@@ -1,0 +1,6 @@
+framework module Pods_sstQA {
+  umbrella header "Pods-sstQA-umbrella.h"
+
+  export *
+  module * { export * }
+}
